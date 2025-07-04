@@ -21,9 +21,6 @@ body {
   right: 0;
   bottom: 0;
 }
-.card-shadow {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
 .btn-custom-primary {
   background-color: #4a91e200; /* Blue button */
   border-color: #ffffff;
@@ -50,26 +47,6 @@ body {
 .btn-custom-purple:hover {
   background-color: #7a4fbf;
   border-color: #7a4fbf;
-}
-.icon-box {
-  background-color: white;
-  border: 1px solid #e0e0e0;
-}
-.text-monarch {
-  color: #f5a623; /* Orange */
-}
-.text-lifepac {
-  color: #4a90e2; /* Blue */
-}
-.text-horizons {
-  color: #8c60d3; /* Purple */
-}
-.text-academy {
-  color: #4caf50; /* Green */
-}
-.img-fluid-custom {
-  max-width: 100%;
-  height: auto;
 }
 .card-img-h-48 {
   height: 12rem; /* Equivalent to Tailwind's h-48 (16 * 3 = 48px, 1rem = 16px) */

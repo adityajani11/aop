@@ -1,5 +1,5 @@
 .programs-section {
-  margin-top: -120px;
+  margin-top: -100px;
   position: relative;
   z-index: 3;
   padding: 0 20px 60px;
@@ -51,21 +51,25 @@
 
 /* Color classes remain the same */
 .monarch {
-  color: #ff6b35;
+  color: #ea9f22;
+  border: 2px solid #ea9f22;
 }
 .lifepac {
-  color: #4facfe;
+  color: #2ab5cc;
+  border: 2px solid #2ab5cc;
 }
 .horizons {
-  color: #8e44ad;
+  color: #7686c5;
+  border: 2px solid #7686c5;
 }
 .academy {
-  color: #2c3e50;
+  color: #45447f;
+  border: 2px solid #45447f;
 }
 
 @media (max-width: 768px) {
   .programs-section {
-    margin-top: -50px;
+    margin-top: -70px;
   }
 
   .program-card .card-body {
