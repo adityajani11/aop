@@ -3,7 +3,7 @@ body {
   background-color: #f8f8f8; /* Light gray background */
 }
 .hero-section {
-  background-image: url("/assets/hero-background.png"); /* Placeholder for the background image */
+  background-image: url("assets/hero-background.png"); /* Placeholder for the background image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
