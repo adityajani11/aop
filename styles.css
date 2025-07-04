@@ -3,13 +3,15 @@ body {
   background-color: #f8f8f8; /* Light gray background */
 }
 .hero-section {
-  background-image: url("https://placehold.co/1920x600/667eea/ffffff?text=Background+Image"); /* Placeholder for the background image */
+  background-image: url("/assets/hero-background.png"); /* Placeholder for the background image */
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   position: relative;
   color: white;
   padding-top: 8rem; /* py-20 equivalent */
   padding-bottom: 8rem; /* py-20 equivalent */
+  max-height: 500px;
 }
 @media (min-width: 768px) {
   .hero-section {

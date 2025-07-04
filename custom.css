@@ -1,0 +1,8 @@
+:root {
+  --light-blue: #2ab5cc;
+}
+
+.top-bar {
+  background-color: var(--light-blue);
+  color: white;
+}
