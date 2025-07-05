@@ -77,7 +77,6 @@
   }
 
   .program-icon {
-    margin-right: 0; /* Remove horizontal margin */
-    margin-bottom: 15px; /* Add vertical margin for stacking */
+    margin-right: 20;
   }
 }

@@ -1,6 +1,5 @@
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f8f8f8; /* Light gray background */
 }
 .hero-section {
   background-image: url("assets/hero-background.png"); /* Placeholder for the background image */
@@ -29,26 +28,4 @@ body {
 .btn-custom-primary:hover {
   background-color: #b6b6b62a;
   border-color: #ffffff;
-}
-.btn-custom-secondary {
-  background-color: #f5a623; /* Orange button */
-  border-color: #f5a623;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-.btn-custom-secondary:hover {
-  background-color: #e0911a;
-  border-color: #e0911a;
-}
-.btn-custom-purple {
-  background-color: #8c60d3; /* Purple button */
-  border-color: #8c60d3;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-.btn-custom-purple:hover {
-  background-color: #7a4fbf;
-  border-color: #7a4fbf;
-}
-.card-img-h-48 {
-  height: 12rem; /* Equivalent to Tailwind's h-48 (16 * 3 = 48px, 1rem = 16px) */
-  object-fit: cover;
 }

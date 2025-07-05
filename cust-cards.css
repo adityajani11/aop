@@ -1,5 +1,5 @@
 .card {
-  border-radius: 0.5rem; /* More rounded corners for the card */
+  border-radius: 0.5rem;
   overflow: hidden; /* Ensures header corners are rounded within card */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -15,11 +15,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 250px; /* Adjust height as needed */
+  min-height: 250px;
   position: relative;
   background-size: cover; /* Cover the entire header area */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card-badges {
@@ -47,19 +47,66 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #45447fbf;
   opacity: 0.75;
   z-index: 1; /* Place overlay below content but above background image */
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 
-/* Updated Ignite header with background image */
+/* Headers with background image */
+.header-monarch {
+  background-image: url("assets/monarch-bg.png"); /* Placeholder image */
+  background-color: #fcb13bbf; /* Fallback color if image fails */
+}
+.btn-custom-monarch {
+  background-color: #fcb13b;
+  color: #fff;
+}
+.btn-custom-monarch:hover {
+  background-color: #fcb23be1;
+  color: #fff;
+}
+.monarch-overlay {
+  background-color: #fcb13bbf;
+}
+
+/* Header Lifepac */
+.header-lifepac {
+  background-image: url("assets/lifepac-bg.png"); /* Placeholder image */
+  background-color: #27b6cd; /* Fallback color if image fails */
+}
+.btn-custom-lifepac {
+  background-color: #27b6cd;
+  color: #fff;
+}
+.btn-custom-lifepac:hover {
+  background-color: #27b7cdd7;
+  color: #fff;
+}
+.lifepac-overlay {
+  background-color: #2ab5ccbf;
+}
+
+/* Header Horizons */
+.header-horizons {
+  background-image: url("assets/lifepac-bg.png"); /* Placeholder image */
+  background-color: #7686c5; /* Fallback color if image fails */
+}
+.btn-custom-horizons {
+  background-color: #7686c5;
+  color: #fff;
+}
+.btn-custom-horizons:hover {
+  background-color: #7686c5e0;
+  color: #fff;
+}
+.horizons-overlay {
+  background-color: #7686c5bf;
+}
+
+/* Header Ignite */
 .header-ignite {
   background-image: url("assets/ignite-bg.jpg"); /* Placeholder image */
   background-color: #673ab7; /* Fallback color if image fails */
 }
-
 .btn-custom-ignite {
   background-color: rgba(69, 68, 127, 1);
   color: #fff;
@@ -68,11 +115,45 @@
   background-color: rgba(69, 68, 127, 0.863);
   color: #fff;
 }
+.ignite-overlay {
+  background-color: #45447fbf;
+}
+
+/* Header Robotify */
+.header-robotify {
+  background-image: url("assets/robotify-bg.png"); /* Placeholder image */
+  background-color: #ee5253; /* Fallback color if image fails */
+}
+.btn-custom-robotify {
+  background-color: #ee5253;
+  color: #fff;
+}
+.btn-custom-robotify:hover {
+  background-color: #ee5252da;
+  color: #fff;
+}
+.robotify-overlay {
+  background-color: #ee5253bf;
+}
+
+/* Header Ignite */
+.header-extra {
+  background-image: url("assets/side-image-2.png"); /* Placeholder image */
+  background-color: #003c51; /* Fallback color if image fails */
+}
+.btn-custom-extra {
+  background-color: #003c51;
+  color: #fff;
+}
+.btn-custom-extra:hover {
+  background-color: #003b51dc;
+  color: #fff;
+}
 
 .btn-learn-more {
-  border: 1px solid; /* Bootstrap primary border */
+  border: 1px solid;
   border-color: rgba(209, 213, 219, 1);
-  color: rgba(55, 65, 81, 1); /* Bootstrap primary text */
+  color: rgba(55, 65, 81, 1);
   transition: all 0.2s ease-in-out;
 }
 .btn-learn-more:hover {
@@ -96,7 +177,7 @@
 }
 .card-body .card-text {
   font-size: 0.95rem;
-  color: #6c757d;
+  color: #374151;
   margin-bottom: 1.5rem; /* Space before buttons */
   flex-grow: 1; /* Allows text to take available space */
 }
