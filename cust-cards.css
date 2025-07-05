@@ -1,0 +1,114 @@
+.card {
+  border-radius: 0.5rem; /* More rounded corners for the card */
+  overflow: hidden; /* Ensures header corners are rounded within card */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.card-header-custom {
+  padding: 1.5rem;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px; /* Adjust height as needed */
+  position: relative;
+  background-size: cover; /* Cover the entire header area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.card-badges {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2; /* Ensure badges are above overlay */
+}
+.card-badges .badge {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px 15px 8px 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* Overlay for background images */
+.card-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #45447fbf;
+  opacity: 0.75;
+  z-index: 1; /* Place overlay below content but above background image */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Updated Ignite header with background image */
+.header-ignite {
+  background-image: url("assets/ignite-bg.jpg"); /* Placeholder image */
+  background-color: #673ab7; /* Fallback color if image fails */
+}
+
+.btn-custom-ignite {
+  background-color: rgba(69, 68, 127, 1);
+  color: #fff;
+}
+.btn-custom-ignite:hover {
+  background-color: rgba(69, 68, 127, 0.863);
+  color: #fff;
+}
+
+.btn-learn-more {
+  border: 1px solid; /* Bootstrap primary border */
+  border-color: rgba(209, 213, 219, 1);
+  color: rgba(55, 65, 81, 1); /* Bootstrap primary text */
+  transition: all 0.2s ease-in-out;
+}
+.btn-learn-more:hover {
+  border-color: #212529;
+  color: rgba(55, 65, 81, 1);
+}
+
+.card-body {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes buttons to the bottom */
+  height: 100%; /* Ensures card body takes full height */
+}
+.card-body .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #343a40;
+}
+.card-body .card-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem; /* Space before buttons */
+  flex-grow: 1; /* Allows text to take available space */
+}
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+.card-buttons .btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
