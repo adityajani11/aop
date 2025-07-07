@@ -83,6 +83,13 @@
   }
 }
 
+/* Tablet screens - span message */
+@media (min-width: 768px) {
+  .top-bar span {
+    font-size: small;
+  }
+}
+
 /* Min 992px and up [Medium-Large Screens] */
 @media (min-width: 992px) {
   .top-bar span {
