@@ -1,0 +1,85 @@
+:root {
+  --white: #ffffff;
+  --light-blue: #2ab5cc;
+  --theme-btn: #1c8a9c;
+  --heading-text: #374151;
+
+  --btn-monarch: #fcb13b;
+  --btn-monarch-hover: #fcb23be1;
+  --monarch-overlay: #fcb13bbf;
+
+  --btn-lifepac: #27b6cd;
+  --btn-lifepac-hover: #27b7cdd7;
+  --lifepac-overlay: #2ab5ccbf;
+
+  --btn-horizons: #7686c5;
+  --btn-horizons-hover: #7686c5e0;
+  --horizons-overlay: #7686c5bf;
+
+  --btn-ignite: #45447f;
+  --btn-ignite-hover: #45447fe0;
+  --ignite-overlay: #45447fbf;
+
+  --btn-robotify: #ee5253;
+  --btn-robotify-hover: #ee5252da;
+  --robotify-overlay: #ee5253bf;
+
+  --btn-extra: #003c51;
+  --btn-extra-hover: #003b51dc;
+
+  --btn-learn-more-border: #d1d5db;
+  --btn-learn-more-border-hover: #212529;
+  --btn-learn-more: #374151;
+
+  --card-title: #343a40;
+  --card-text: #374151;
+
+  --blue-theme-section-bg: #e5fafb;
+  --btn-bottom-section: #111827;
+  --btn-bottom-section-hover: #fffffdd3;
+
+  --btn-sticky-hover: #2190a3;
+  --btn-primary-custom-hover: #2b7480;
+  --blockquote-custom: #6b7280;
+  --blockquote-custom-border-top: #d1d5db;
+  --text-uppercase-custom: #828282;
+
+  --footer-bg: #1f2937;
+  --footer-text2: #ecf0f1;
+  --footer-text: #d1d5db;
+  --footer-heading: #9ca3af;
+}
+
+.top-bar {
+  background-color: var(--light-blue);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: var(--theme-btn);
+}
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 14px;
+  }
+  .top-bar {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 12px;
+  }
+  .top-bar {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-bar {
+    font-size: 0.95rem;
+  }
+}
