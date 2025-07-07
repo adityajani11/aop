@@ -1,0 +1,86 @@
+.programs-section {
+  margin-top: -100px;
+  position: relative;
+  z-index: 3;
+  padding: 0 20px 60px;
+}
+
+.program-card {
+  background: var(--program-card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 8px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card .program-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.program-icon {
+  font-size: 2.5rem;
+  margin-right: 15px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center; /* Center the icon vertically within its own div */
+  justify-content: center; /* Center the icon horizontally within its own div */
+}
+
+.program-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.program-grade {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Color classes remain the same */
+.monarch {
+  color: var(--monarch-mini-card);
+  border: 2px solid var(--monarch-mini-card) !important;
+}
+.lifepac {
+  color: var(--lifepac-mini-card);
+  border: 2px solid var(--lifepac-mini-card) !important;
+}
+.horizons {
+  color: var(--horizons-mini-card);
+  border: 2px solid var(--horizons-mini-card) !important;
+}
+.academy {
+  color: var(--academy-mini-card);
+  border: 2px solid var(--academy-mini-card) !important;
+}
+
+@media (max-width: 768px) {
+  .programs-section {
+    margin-top: -70px;
+  }
+
+  .program-card-body {
+    justify-content: center;
+  }
+
+  .program-card .card-body {
+    flex-direction: column; /* Stack icon and text vertically on smaller screens */
+    text-align: center; /* Center content when stacked */
+  }
+
+  .program-icon {
+    margin-right: 20;
+  }
+}
