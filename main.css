@@ -4,6 +4,11 @@
   --theme-btn: #1c8a9c;
   --heading-text: #374151;
 
+  --monarch-mini-card: #ea9f22;
+  --lifepac-mini-card: #2ab5cc;
+  --horizons-mini-card: #7686c5;
+  --academy-mini-card: #45447f;
+
   --btn-monarch: #fcb13b;
   --btn-monarch-hover: #fcb23be1;
   --monarch-overlay: #fcb13bbf;
@@ -31,12 +36,15 @@
   --btn-learn-more-border-hover: #212529;
   --btn-learn-more: #374151;
 
+  --program-card-bg: #ffffffea;
   --card-title: #343a40;
   --card-text: #374151;
 
   --blue-theme-section-bg: #e5fafb;
   --btn-bottom-section: #111827;
   --btn-bottom-section-hover: #fffffdd3;
+  --btn-primary-custom2: #4a91e200;
+  --btn-primary-custom2-hover-bg: #b6b6b62a;
 
   --btn-sticky-hover: #2190a3;
   --btn-primary-custom-hover: #2b7480;

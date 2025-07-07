@@ -2,18 +2,18 @@ body {
   font-family: "Inter", sans-serif;
 }
 .hero-section {
-  background-image: url("assets/hero-background.png"); /* Placeholder for the background image */
+  background-image: url("assets/hero-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  color: white;
-  padding-top: 8rem; /* py-20 equivalent */
-  padding-bottom: 8rem; /* py-20 equivalent */
+  color: var(--white);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   max-height: 500px;
 }
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -21,11 +21,11 @@ body {
   bottom: 0;
 }
 .btn-custom-primary {
-  background-color: #4a91e200; /* Blue button */
-  border-color: #ffffff;
+  background-color: var(--btn-primary-custom2);
+  border-color: var(--white);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .btn-custom-primary:hover {
-  background-color: #b6b6b62a;
-  border-color: #ffffff;
+  background-color: var(--btn-primary-custom2-hover-bg);
+  border-color: var(--white);
 }
