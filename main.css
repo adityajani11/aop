@@ -58,36 +58,48 @@
   --footer-heading: #9ca3af;
 }
 
+.nav-link:hover {
+  color: var(--theme-btn);
+}
+
+/* Top Bar Container Styles */
 .top-bar {
   background-color: var(--light-blue);
   color: var(--white);
   font-size: 0.9rem;
 }
 
-.nav-link:hover {
-  color: var(--theme-btn);
+/* Max 376px and low [Smaller Screens] */
+@media (max-width: 376px) {
+  .top-bar span {
+    font-size: 0.65rem;
+  }
 }
 
-@media (max-width: 767.98px) {
-  html {
-    font-size: 14px;
-  }
-  .top-bar {
+/* From min 377px to 420px [Small-Medium Screens] */
+@media (min-width: 377px) and (max-width: 420px) {
+  .top-bar span {
     font-size: 0.8rem;
   }
 }
 
-@media (max-width: 575.98px) {
-  html {
-    font-size: 12px;
-  }
-  .top-bar {
-    font-size: 0.85rem;
+/* Tablet screens - span message */
+@media (min-width: 768px) {
+  .top-bar span {
+    font-size: small;
   }
 }
 
+/* Min 992px and up [Medium-Large Screens] */
 @media (min-width: 992px) {
-  .top-bar {
+  .top-bar span {
     font-size: 0.95rem;
+  }
+}
+
+/* Tablet screens nav link */
+@media (min-width: 768px) and (max-width: 800px) {
+  .nav-link {
+    font-size: small;
   }
 }
