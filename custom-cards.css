@@ -1,86 +1,195 @@
-.programs-section {
-  margin-top: -100px;
-  position: relative;
-  z-index: 3;
-  padding: 0 20px 60px;
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden; /* Ensures header corners are rounded within card */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
-.program-card {
-  background: rgba(255, 255, 255, 0.918);
-  backdrop-filter: blur(10px);
-  border-radius: 8px !important;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin-top: 20px;
-  height: 100%;
-}
-
-.program-card:hover {
+.card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.card-header-custom {
+  padding: 1.5rem;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  position: relative;
+  background-size: cover; /* Cover the entire header area */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.program-card .program-card-body {
-  display: flex; /* Establishes a flex container */
-  flex: 1 1 auto;
-  align-items: center; /* Vertically centers items */
-  padding: 20px; /* Consistent padding inside the card */
-  text-align: left; /* Aligns text within the card to the left */
+.card-badges {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2; /* Ensure badges are above overlay */
+}
+.card-badges .badge {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px 15px 8px 15px;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.85rem;
 }
 
-.program-icon {
-  font-size: 2.5rem; /* Icon size */
-  margin-right: 15px; /* Space between icon and text content */
-  flex-shrink: 0; /* Prevents the icon from shrinking */
-  display: flex; /* Use flex for icon itself to ensure proper centering if needed */
-  align-items: center; /* Center the icon vertically within its own div */
-  justify-content: center; /* Center the icon horizontally within its own div */
+/* Overlay for background images */
+.card-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  z-index: 1; /* Place overlay below content but above background image */
 }
 
-.program-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 5px; /* Space between title and grade */
-  line-height: 1.2; /* Improve line spacing for title */
+/* Headers with background image */
+.header-monarch {
+  background-image: url("assets/monarch-bg.png"); /* Placeholder image */
+  background-color: var(--btn-monarch); /* Fallback color if image fails */
+}
+.btn-custom-monarch {
+  background-color: var(--btn-monarch);
+  color: var(--white);
+}
+.btn-custom-monarch:hover {
+  background-color: var(--btn-monarch-hover);
+  color: var(--white);
+}
+.monarch-overlay {
+  background-color: var(--monarch-overlay);
 }
 
-.program-grade {
+/* Header Lifepac */
+.header-lifepac {
+  background-image: url("assets/lifepac-bg.png"); /* Placeholder image */
+  background-color: var(--btn-lifepac); /* Fallback color if image fails */
+}
+.btn-custom-lifepac {
+  background-color: var(--btn-lifepac);
+  color: var(--white);
+}
+.btn-custom-lifepac:hover {
+  background-color: var(--btn-lifepac-hover);
+  color: var(--white);
+}
+.lifepac-overlay {
+  background-color: var(--lifepac-overlay);
+}
+
+/* Header Horizons */
+.header-horizons {
+  background-image: url("assets/lifepac-bg.png"); /* Placeholder image */
+  background-color: var(--btn-horizons); /* Fallback color if image fails */
+}
+.btn-custom-horizons {
+  background-color: var(--btn-horizons);
+  color: var(--white);
+}
+.btn-custom-horizons:hover {
+  background-color: var(--btn-horizons-hover);
+  color: var(--white);
+}
+.horizons-overlay {
+  background-color: var(--horizons-overlay);
+}
+
+/* Header Ignite */
+.header-ignite {
+  background-image: url("assets/ignite-bg.jpg"); /* Placeholder image */
+  background-color: var(--btn-ignite); /* Fallback color if image fails */
+}
+.btn-custom-ignite {
+  background-color: var(--btn-ignite);
+  color: var(--white);
+}
+.btn-custom-ignite:hover {
+  background-color: var(--btn-ignite-hover);
+  color: var(--white);
+}
+.ignite-overlay {
+  background-color: var(--ignite-overlay);
+}
+
+/* Header Robotify */
+.header-robotify {
+  background-image: url("assets/robotify-bg.png"); /* Placeholder image */
+  background-color: var(--btn-robotify); /* Fallback color if image fails */
+}
+.btn-custom-robotify {
+  background-color: var(--btn-robotify);
+  color: var(--white);
+}
+.btn-custom-robotify:hover {
+  background-color: var(--btn-robotify-hover);
+  color: var(--white);
+}
+.robotify-overlay {
+  background-color: var(--robotify-overlay);
+}
+
+/* Header Ignite */
+.header-extra {
+  background-image: url("assets/side-image-2.png"); /* Placeholder image */
+  background-color: var(--btn-extra); /* Fallback color if image fails */
+}
+.btn-custom-extra {
+  background-color: var(--btn-extra);
+  color: var(--white);
+}
+.btn-custom-extra:hover {
+  background-color: var(--btn-extra-hover);
+  color: var(--white);
+}
+
+.btn-learn-more {
+  border: 1px solid;
+  border-color: var(--btn-learn-more-border);
+  color: var(--btn-learn-more);
+  transition: all 0.2s ease-in-out;
+}
+.btn-learn-more:hover {
+  border-color: var(--btn-learn-more-border-hover);
+  color: var(--btn-learn-more);
+}
+
+.card-body {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes buttons to the bottom */
+  height: 100%; /* Ensures card body takes full height */
+}
+.card-body .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--card-title);
+}
+.card-body .card-text {
+  font-size: 0.95rem;
+  color: var(--card-text);
+  margin-bottom: 1.5rem; /* Space before buttons */
+  flex-grow: 1; /* Allows text to take available space */
+}
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+.card-buttons .btn {
+  padding: 0.75rem 1.25rem;
   font-size: 0.9rem;
-  margin: 0; /* Remove default margins */
-}
-
-/* Color classes remain the same */
-.monarch {
-  color: #ea9f22;
-  border: 2px solid #ea9f22 !important;
-}
-.lifepac {
-  color: #2ab5cc;
-  border: 2px solid #2ab5cc !important;
-}
-.horizons {
-  color: #7686c5;
-  border: 2px solid #7686c5 !important;
-}
-.academy {
-  color: #45447f;
-  border: 2px solid #45447f !important;
-}
-
-@media (max-width: 768px) {
-  .programs-section {
-    margin-top: -70px;
-  }
-
-  .program-card-body {
-    justify-content: center;
-  }
-
-  .program-card .card-body {
-    flex-direction: column; /* Stack icon and text vertically on smaller screens */
-    text-align: center; /* Center content when stacked */
-  }
-
-  .program-icon {
-    margin-right: 20;
-  }
+  font-weight: 500;
+  border-radius: 0.5rem;
 }
