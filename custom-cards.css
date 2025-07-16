@@ -87,7 +87,7 @@
 
 /* Header Horizons */
 .header-horizons {
-  background-image: url("assets/lifepac-bg.png"); /* Placeholder image */
+  background-image: url("assets/horizons-bg.png"); /* Placeholder image */
   background-color: var(--btn-horizons); /* Fallback color if image fails */
 }
 .btn-custom-horizons {
